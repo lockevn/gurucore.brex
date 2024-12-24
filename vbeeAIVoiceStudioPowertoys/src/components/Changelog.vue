@@ -15,7 +15,10 @@ const commitURL = `${gitURL}/commit/${gitCommit}`
       class="self-start"
     >
       <p>
+        <i-fa-solid-dice-five />
         Version: {{ version }}
+
+        <i-heroicons-outline:menu-alt-2 />
         <a
           class="text-green-500"
           :href="commitURL"
@@ -24,8 +27,8 @@ const commitURL = `${gitURL}/commit/${gitCommit}`
           (#{{ gitCommit }})
         </a>
       </p>
-      <h1>Changelog</h1>
     </div>
+
     <!-- eslint-disable vue/no-v-html -->
     <div
       class="prose changelog"

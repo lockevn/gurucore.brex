@@ -3,25 +3,33 @@
 A `vue3` site [Vite](https://vitejs.dev/)
 powered WebExtension on `manifest 3`
 
-## Features
+## Dev Features
 
-- Vue 3 - Composition API, `Script setup` and more!
+- Vue 3 - Composition API, `Script setup`
 - Vue 3 app in Content Script too (template added)
 - Vue devtools support
 - HMR for extension pages and content scripts, with Firefox support
-- Sample `onInstall` & `onUpdate` pages
 - [`Tailwind`](https://tailwindcss.com/) css And [`daisyUI`](https://daisyui.com/)
+
 - Tailwindcss plugins for Typography, forms, prettier and daisy ui
 - Vue Router setup incuding `unplugin-vue-router` for automatic route registration
-- vscode recommended settings and extensions for extension/ plugin development
+
 - Effortless communications - powered by [`webext-bridge`](https://github.com/zikaari/webext-bridge)
 - [Components auto importing](./src/components)
 - [Icons](./src/components) - Access to icons from any iconset directly
   - By default [Material Design Icons](https://materialdesignicons.com/cdn/1.6.50-dev/) set is enabled
+- Github build and release actions
+
+## Devex
+
 - [TypeScript](https://www.typescriptlang.org/) - type safe
 - `Eslint` & `Prettier` configured for `vue`, `javascript`, `TypeScript`
 - [CRXJS Vite Plugin](https://crxjs.dev/vite-plugin) Build Chrome, Firefox and Other Extensions with Vite
-- Github build and release actions
+- vscode recommended settings and extensions for extension/ plugin development
+
+## Brex Features
+
+- Sample `onInstall` & `onUpdate` pages
 
 ## Pre-packed
 
@@ -57,23 +65,35 @@ Tailwind css `forms` and `typography` plugins are enabled for default styling of
 - Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
 - Use Composition API with [`setup` SFC syntax](https://pinia.vuejs.org/cookbook/composables.html#Setup-Stores) in Pinia stores
 
-## Use the Template
+## Development
 
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/mubaidr/vite-vue3-browser-extension-v3/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-> If you don't have pnpm installed, run: npm install -g pnpm
+### Clone from
 
 ```bash
 pnpx degit mubaidr/vite-vue3-browser-extension-v3 my-webext
 cd my-webext
 pnpm i
 ```
+
+```bash
+pnpm dev
+```
+
+Then **load extension in browser with the `dist/` folder**.
+
+### Build
+
+To build the extension, run
+
+```bash
+pnpm build
+```
+
+```bash
+pnpm lint     # Lint files
+```
+
+And then pack files under `dist/chrome` or `dist/firefox`, you can upload to appropriate extension store.
 
 ## Usage
 
@@ -106,12 +126,6 @@ pnpm i
 - `vite.chrome.config.ts` - Chrome/ chromium based browsers specific vite configuration
 - `vite.firefox.config.ts` - Firefox specific vite configuration
 
-### Scripts
-
-- `pnpm dev` - Start development server
-- `pnpm build` - Build extension
-- `pnpm lint` - Lint files
-
 _You can also use pnpm dev:chrome, pnpm dev:firefox, pnpm build:chrome, pnpm build:firefox, pnpm lint:fix_
 
 ### Extra info
@@ -120,24 +134,6 @@ In [src/background/index.ts](./src/background/index.ts) you can find an example 
 
 We add `?type` to the url to tell if it's update or install event. Then in [src/setup/pages/index.ts](./src/setup/pages/index.ts) we check for the `type` and show the appropriate page.
 
-### Development
-
-```bash
-pnpm dev
-```
-
-Then **load extension in browser with the `dist/` folder**.
-
-### Build
-
-To build the extension, run
-
-```bash
-pnpm build
-```
-
-And then pack files under `dist/chrome` or `dist/firefox`, you can upload to appropriate extension store.
-
 ## Contributors
 
 <!-- readme: collaborators,contributors -start -->
@@ -145,47 +141,12 @@ And then pack files under `dist/chrome` or `dist/firefox`, you can upload to app
 	<tbody>
 		<tr>
             <td align="center">
-                <a href="https://github.com/mubaidr">
-                    <img src="https://avatars.githubusercontent.com/u/2222702?v=4" width="100;" alt="mubaidr"/>
+                <a href="https://github.com/lockevn">
+                    <img src="https://avatars.githubusercontent.com/u/122280?v=4" width="100;" alt="lockevn"/>
                     <br />
-                    <sub><b>Muhammad Ubaid Raza</b></sub>
+                    <sub><b>lockevn</b></sub>
                 </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/baramofme">
-                    <img src="https://avatars.githubusercontent.com/u/44565599?v=4" width="100;" alt="baramofme"/>
-                    <br />
-                    <sub><b>Jihoon Yi</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/poncianodiego">
-                    <img src="https://avatars.githubusercontent.com/u/20716004?v=4" width="100;" alt="poncianodiego"/>
-                    <br />
-                    <sub><b>Diego Ponciano</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/IgorFZ">
-                    <img src="https://avatars.githubusercontent.com/u/85708187?v=4" width="100;" alt="IgorFZ"/>
-                    <br />
-                    <sub><b>igorfz</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/hi2code">
-                    <img src="https://avatars.githubusercontent.com/u/51270649?v=4" width="100;" alt="hi2code"/>
-                    <br />
-                    <sub><b>hi2code</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/justorez">
-                    <img src="https://avatars.githubusercontent.com/u/17308328?v=4" width="100;" alt="justorez"/>
-                    <br />
-                    <sub><b>Null</b></sub>
-                </a>
-            </td>
+            </td>            
 		</tr>
 	<tbody>
 </table>

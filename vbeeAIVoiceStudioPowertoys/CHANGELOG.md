@@ -1,20 +1,14 @@
-# Update #Whatever Version Here
+# Our changes
 
-# Example update
+- Setup the brex.
 
-- Update README.md
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, vitae ultricies.
+- [x] Install page.
 
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, vitae ultricies.
+- [x] Update page.
 
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, vitae ultricies.
-
-- [ ] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, vitae ultricies.
+- [ ] Write the real business.
 
 | Left columns | Right columns | Center Align |
 | ------------ | ------------: | :----------: |
 | left foo     |     right foo |  center foo  |
 | left bar     |     right bar |  center bar  |
-| left baz     |     right baz |  center baz  |
-
-### Yes

@@ -13,16 +13,13 @@ const version = __VERSION__
       <p class="text-lg">
         {{ displayName }} has been updated to the latest version. 🎉
       </p>
-      <p class="text-lg">Version: {{ version }}</p>
-
-      <h1 class="text-2xl font-bold">What's new?</h1>
     </div>
 
-    <p>Icons</p>
-    <div>
-      <i-fa-solid-dice-five />
-      <i-heroicons-outline:menu-alt-2 />
-      <i-heroicons-outline-menu-alt-2 />
+    <div
+      class="flex flex-col gap-y-4"
+      style="grid-area: title"
+    >
+      <h2 class="text-2xl font-bold">What's new in version {{ version }}?</h2>
     </div>
 
     <Changelog />

@@ -1,5 +1,8 @@
 // required for vue-devtools
+// remove old code @use './node_modules/vite-plugin-vue-devtools/src/overlay/devtools-overlay.css';
+// clone the file in node_modules to the project
 @use './devtools-overlay.css';
+
 @use 'tailwindcss/base';
 @use 'tailwindcss/components';
 @use 'tailwindcss/utilities';
