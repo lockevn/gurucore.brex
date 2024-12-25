@@ -53,10 +53,11 @@ export default {
       resources: ['src/content-script/iframe/index.html'],
     },
   ],
+
   icons: {
-    16: 'src/assets/logo.png',
-    24: 'src/assets/logo.png',
-    32: 'src/assets/logo.png',
-    128: 'src/assets/logo.png',
+    '16': 'src/assets/images/icon-16.png',
+    '32': 'src/assets/images/icon-32.png',
+    '48': 'src/assets/images/icon-48.png',
+    '128': 'src/assets/images/icon-128.png',
   },
 } as ManifestV3Export
