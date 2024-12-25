@@ -7,14 +7,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Changelog: typeof import('./../components/Changelog.vue')['default']
+    Changelog: typeof import('./../components/InstantBlocks/Changelog.vue')['default']
+    CurrentUserNameChip: typeof import('./../components/InstantBlocks/CurrentUserNameChip.vue')['default']
+    DisplayNameChip: typeof import('./../components/InstantBlocks/DisplayNameChip.vue')['default']
     FeatureList: typeof import('./../components/InstantBlocks/FeatureList.vue')['default']
     IFaSolidDiceFive: typeof import('~icons/fa-solid/dice-five')['default']
     'IHeroiconsOutline:menuAlt2': typeof import('~icons/heroicons-outline/menu-alt2')['default']
     IHeroiconsOutlineMenuAlt2: typeof import('~icons/heroicons-outline/menu-alt2')['default']
     Install: typeof import('./../components/install.vue')['default']
+    RenderMarkdown: typeof import('./../components/RenderUtils/RenderMarkdown.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Update: typeof import('./../components/update.vue')['default']
+    VersionChip: typeof import('./../components/InstantBlocks/VersionChip.vue')['default']
   }
 }
