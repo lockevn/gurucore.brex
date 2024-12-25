@@ -28,12 +28,22 @@ export default {
   },
   content_scripts: [
     {
-      all_frames: true,
-      js: ['src/content-script/index.ts'],
-      matches: ['*://*/*'],
+      matches: [
+        '*://studio.vbee.vn/studio/text-to-speech/*',
+        '*://studio.vbee.vn/studio/text-to-speech*',
+      ],
+      js: ['src/content-script/studio/cs-studio.ts'],
       run_at: 'document_end',
     },
+
+    // {
+    //   matches: ['*://vnexpress.net/*'],
+    //   all_frames: true,
+    //   js: ['src/content-script/index.ts'],
+    //   run_at: 'document_end',
+    // },
   ],
+
   // Full options page
   options_page: 'src/options/index.html',
   // Embedded options page

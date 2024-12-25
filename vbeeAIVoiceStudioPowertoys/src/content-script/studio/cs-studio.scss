@@ -1,0 +1,10 @@
+// @config "./tailwind.config.cjs"; // To isolate the styles of the source website and chrome plugin
+// @use '../../assets/base';
+
+$background-color: rgb(26, 26, 26);
+$color: yellow;
+
+body {
+  // invert color in simple way https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css
+  filter: invert(100%);
+}
