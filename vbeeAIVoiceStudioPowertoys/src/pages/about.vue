@@ -1,14 +1,36 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useAppStore } from '@/stores/app.store'
+
+const store = useAppStore()
+const count = computed(() => store.count)
+</script>
 
 <template>
+  <!-- Popup About Page -->
   <div class="m-4">
-    <h1>Extension About Page</h1>
+    <button @click="$router.back">Go Back</button>
+  </div>
 
-    <button @click="$router.back">
-      Go Back
-    </button>
+  <div class="m-4">
+    <h1>About</h1>
 
-    <Changelog />
+    <p><CurrentUserNameChip /></p>
+
+    <div class="flex gap-x-2 justify-center">
+      <button
+        class="btn btn-primary"
+        @click="store.increment"
+      >
+        Increment
+      </button>
+      <p>Count: {{ count }}</p>
+      <button
+        class="btn btn-primary"
+        @click="store.decrement"
+      >
+        Decrement
+      </button>
+    </div>
   </div>
 </template>
 

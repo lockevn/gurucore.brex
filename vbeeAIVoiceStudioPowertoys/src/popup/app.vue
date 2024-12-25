@@ -14,7 +14,16 @@
     aria-label="Site Footer"
     class="bg-gray-50"
   >
-    Popup Footer
+    <!-- Popup Footer -->
+    <RouterLink
+      class="underline"
+      to="/common/about"
+    >
+      About
+    </RouterLink>
+
+    <DisplayNameChip />
+    <VersionChip />
   </footer>
 </template>
 

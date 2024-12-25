@@ -1,7 +1,4 @@
-<script setup lang="ts">
-const displayName = __DISPLAY_NAME__
-const version = __VERSION__
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
@@ -11,18 +8,17 @@ const version = __VERSION__
     >
       <h1 class="text-4xl font-bold text-center">🎉 Updated! 🎉</h1>
       <p class="text-lg">
-        {{ displayName }} has been updated to the latest version. 🎉
+        <DisplayNameChip />
+        has been updated to the latest
+        <VersionChip />
+        . 🎉
       </p>
     </div>
 
-    <div
-      class="flex flex-col gap-y-4"
-      style="grid-area: title"
-    >
-      <h2 class="text-2xl font-bold">What's new in version {{ version }}?</h2>
-    </div>
-
     <Changelog />
+
+    <i-fa-solid-dice-five />
+    <i-heroicons-outline:menu-alt-2 />
   </div>
 </template>
 

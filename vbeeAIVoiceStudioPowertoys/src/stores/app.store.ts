@@ -2,11 +2,16 @@ import { useStorage } from '@vueuse/core'
 import { defineStore } from 'pinia'
 
 export const useAppStore = defineStore('app', () => {
-  const count = useStorage('count', 0)
+  // NOTE: You should probably use chrome.storage API instead of localStorage since localStorage history can be cleared by the user.
+  // See https://developer.chrome.com/docs/extensions/reference/api/storage
   const name = useStorage('name', 'John Doe')
 
-  // You should probably use chrome.storage API instead of localStorage since localStorage history can be cleared by the user.
-  // See https://developer.chrome.com/docs/extensions/reference/api/storage
+  const count = useStorage('count', 0)
+  const isDarkTheme = useStorage('isDarkTheme', false)
+
+  const toggleDarkTheme = () => {
+    isDarkTheme.value = !isDarkTheme.value
+  }
 
   const increment = () => {
     count.value++
@@ -17,9 +22,15 @@ export const useAppStore = defineStore('app', () => {
   }
 
   return {
-    count,
     name,
+
+    //
+    count,
     increment,
     decrement,
+
+    //
+    isDarkTheme,
+    toggleDarkTheme,
   }
 })
