@@ -1,10 +1,17 @@
 {
   "name": "gurucore-brex-vbeeaivoicestudio-powertoys",
   "displayName": "Vbee AIVoice Studio Powertoys",
-  "description": "A Vue 3 + Vite Chrome extensions v3",
+  "description": "Utilities to customize AIVoice Studio. A Vue 3 + Vite Chrome extensions v3",
   "private": true,
   "type": "module",
   "version": "0.0.1",
+  "keywords": [
+    "chrome",
+    "extensions",
+    "gurucore"
+  ],
+  "author": "Lockevn",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "marked": "^15.0.4",
     "pinia": "^2.3.0",
