@@ -23,7 +23,7 @@ export default {
     default_popup: 'src/popup/index.html',
   },
   background: {
-    service_worker: 'src/background/index.ts',
+    service_worker: 'src/background/background.ts',
     type: 'module',
   },
   content_scripts: [
