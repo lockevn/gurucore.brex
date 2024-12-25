@@ -5,6 +5,9 @@ import packageJson from './package.json'
 // Read CHANGELOG.md file into a string.
 const changelog = fs.readFileSync('./CHANGELOG.md', 'utf-8')
 
+// Read CHANGELOG.md file into a string.
+const featurelist = fs.readFileSync('./FEATURELIST.md', 'utf-8')
+
 // Get the current git commit hash.
 const gitCommit = spawnSync('git', ['rev-parse', '--short', 'HEAD'])
   .stdout.toString()
@@ -22,6 +25,7 @@ export const defineViteConfig = {
   __NAME__: jsn(packageJson.name),
   __DISPLAY_NAME__: jsn(packageJson.displayName),
   __CHANGELOG__: jsn(changelog),
+  __FEATURELIST__: jsn(featurelist),
   __GIT_COMMIT__: jsn(gitCommit),
   __GITHUB_URL__: jsn(packageJson.repository.url),
 
