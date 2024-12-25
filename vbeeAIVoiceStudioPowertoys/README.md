@@ -114,7 +114,7 @@ And then pack files under `dist/chrome` or `dist/firefox`, you can upload to app
   - `components` - auto-imported Vue components that are shared in popup and options page.
   - `assets` - assets used in Vue components
 - `dist` - built files
-  - `chrome` - Chrome extension, can be publishd to Opera, Edge and toher chromium based browsers store etc
+  - `chrome` - Chrome extension, can be publishd to Opera, Edge and to the chromium based browsers store etc
   - `firefox` - Firefox extension
 
 ### Browser Related Configurations
@@ -130,7 +130,7 @@ _You can also use pnpm dev:chrome, pnpm dev:firefox, pnpm build:chrome, pnpm bui
 
 ### Extra info
 
-In [src/background/index.ts](./src/background/index.ts) you can find an example of chrome.runtime.onInstalled.addListener.
+In [src/background/background.ts](./src/background/background.ts) you can find an example of chrome.runtime.onInstalled.addListener.
 
 We add `?type` to the url to tell if it's update or install event. Then in [src/setup/pages/index.ts](./src/setup/pages/index.ts) we check for the `type` and show the appropriate page.
 

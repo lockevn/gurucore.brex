@@ -3,9 +3,9 @@ import ManifestConfig from './manifest.config'
 
 // remove unsupported fields
 // @ts-expect-error ManifestConfig provides all required fields
-delete ManifestConfig.offline_enabled;
+delete ManifestConfig.offline_enabled
 // @ts-expect-error ManifestConfig provides all required fields
-delete ManifestConfig.version_name;
+delete ManifestConfig.version_name
 
 // @ts-expect-error ManifestConfig provides all required fields
 export default defineManifest((_env) => ({
@@ -16,7 +16,7 @@ export default defineManifest((_env) => ({
     },
   },
   background: {
-    scripts: ['src/background/index.ts'],
+    scripts: ['src/background/background.ts'],
     type: 'module',
     persistent: false,
   },

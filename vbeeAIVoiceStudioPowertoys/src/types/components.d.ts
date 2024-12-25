@@ -13,7 +13,6 @@ declare module 'vue' {
     FeatureList: typeof import('./../components/InstantBlocks/FeatureList.vue')['default']
     IFaSolidDiceFive: typeof import('~icons/fa-solid/dice-five')['default']
     'IHeroiconsOutline:menuAlt2': typeof import('~icons/heroicons-outline/menu-alt2')['default']
-    IHeroiconsOutlineMenuAlt2: typeof import('~icons/heroicons-outline/menu-alt2')['default']
     Install: typeof import('./../components/install.vue')['default']
     RenderMarkdown: typeof import('./../components/RenderUtils/RenderMarkdown.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
