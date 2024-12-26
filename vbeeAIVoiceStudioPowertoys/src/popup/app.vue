@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useAppStore } from '@/stores/app.store'
+const store = useAppStore()
+const count = computed(() => store.count)
+</script>
 
 <template>
   <header
@@ -24,6 +28,8 @@
 
     <DisplayNameChip />
     <VersionChip />
+
+    <span>Usage: {{ count }}</span>
   </footer>
 </template>
 
