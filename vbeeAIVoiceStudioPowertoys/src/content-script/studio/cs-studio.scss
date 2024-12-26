@@ -1,10 +1,66 @@
 // @config "./tailwind.config.cjs"; // To isolate the styles of the source website and chrome plugin
 // @use '../../assets/base';
 
-$background-color: rgb(26, 26, 26);
-$color: yellow;
+$infocusColor: lightgray;
 
-body {
+body.brex__isDarkTheme {
   // invert color in simple way https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css
   filter: invert(100%);
+}
+
+body.brex__isFocusMode {
+  .wallet {
+    visibility: hidden;
+  }
+
+  .brand,
+  .gift-wrapper,
+  .banner,
+  .ads {
+    visibility: hidden;
+  }
+
+  /* Left Navigation ******** */
+  .MuiDrawer-paperAnchorDockedLeft {
+    .swiper.swiper-horizontal {
+      display: none;
+    }
+
+    p,
+    svg,
+    .item-link,
+    .item-text {
+      color: $infocusColor !important;
+    }
+
+    .avatar {
+      display: none;
+    }
+  }
+
+  /* Floating Ads ********** */
+  #moe-onsite-campaign-676c2cfe282626744c8552a8 {
+    display: none;
+  }
+
+  /* Right Pane *********** */
+  .content-layout {
+    [data-testid='GraphicEqRoundedIcon'] {
+      display: none;
+    }
+
+    .tool-row {
+      .tool-row-left {
+        color: $infocusColor;
+        visibility: hidden;
+      }
+    }
+  }
+
+  /* Right Pane, bottom Section */
+  #requests {
+    * {
+      color: $infocusColor;
+    }
+  }
 }
