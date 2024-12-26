@@ -39,7 +39,6 @@ export default antfu(
       'no-alert': 'warn',
       'no-console': 'warn',
       'no-restricted-globals': 'warn',
-      'perfectionist/sort-imports': 'off',
       'import/order': 'warn',
       '@typescript-eslint/ban-ts-comment': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
@@ -48,6 +47,8 @@ export default antfu(
       'ts/explicit-function-return-type': 'off',
 
       // lockevn added
+      'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-named-exports': 'off',
       'jsonc/sort-keys': 'off',
       'vue/singleline-html-element-content-newline': 'off',
       'vue/multi-word-component-names': 'off',
