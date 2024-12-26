@@ -2,11 +2,11 @@
 
 - Setup the brex.
 
+- [x] Focus Mode.
+- [x] Invert Color Mode.
+
 - [x] Install page.
-
 - [x] Update page.
-
-- [ ] Write the real business.
 
 | Left columns | Right columns | Center Align |
 | ------------ | ------------: | :----------: |
